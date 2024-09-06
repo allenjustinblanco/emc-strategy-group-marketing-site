@@ -30,12 +30,13 @@ import { JSX, SVGProps } from "react"
 import { HoverEffect } from "@/components/ui/card-hover-effect"
 import SignupFormDemo from "./example/signup-form-demo";
 import { AnimatedModalDemo } from "./example/animated-modal-demo";
+import { image } from "framer-motion/client";
 
 export function landing() {
   return (
     
     <main className="flex-1 ">
-          <section className="w-full relative overflow-hidden">
+    <section className="w-full h-screen relative overflow-hidden">
       <video
         autoPlay
         loop
@@ -46,7 +47,7 @@ export function landing() {
         <source src="https://emcstrategygroup.com/wp-content/uploads/2023/07/US-Capitol-Rotunda.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative z-10 bg-black bg-opacity-50 py-12 md:py-24 lg:py-32">
+      <div className="relative z-10 bg-black bg-opacity-50 h-full flex items-center">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
@@ -368,34 +369,40 @@ export const projects = [
     description:
       "Leverage our deep relationships and expertise to effectively advocate for your organization's interests at the local, state, and federal levels.",
     link: "",
+    image: "/alamo.jpg"
   },
   {
     title: "External Affairs",
     description:
       "Develop and execute strategic communication plans to build and maintain positive relationships with key stakeholders, including the media, community organizations, and the public.",
     link: "",
+    image: "garden.jpg"
   },
   {
     title: "Workplace Training",
     description:
       "Provide customized training programs to help your employees navigate the complexities of the public sector, from understanding government processes to effective communication and collaboration.",
     link: "",
+    image: "river.jpg"
   },
   {
     title: "Business/Economic Development",
     description:
       "Assist organizations in identifying and securing funding opportunities, navigating regulatory requirements, and fostering partnerships to drive economic growth and development.",
     link: "",
+    image: "sa.jpg"
   },
   {
     title: "Non-Profit Management",
     description:
       "Led by President & CEO Ernie Gonzalez, Jr., EMC excels in guiding diverse non-profit organizations across the nation, maximizing their impact and efficiency. ",
     link: "",
+    image: "sunset.jpg"
   },
   {
     title: "Political Campaign Management",
     description: "EMC crafts winning strategies and builds comprehensive campaign organizations, empowering candidates to achieve electoral success.",
     link: "",
+    image: "building.jpg"
   },
 ];

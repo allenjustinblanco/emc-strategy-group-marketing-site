@@ -5,28 +5,30 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-white dark:bg-black">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <Image src="/EMC-logo.png" alt="EMC Logo" height={32} width={64} />
-          <span className="sr-only">EMC Strategy Group</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#services" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Services
+      <header className="sticky top-0 z-50 bg-black bg-opacity-50 h-16 -mb-16 text-white">
+        <div className="container mx-auto px-4 h-full flex items-center justify-between">
+          <Link href="#" className="flex items-center justify-center" prefetch={false}>
+            <Image src="/EMC-logo.png" alt="EMC Logo" height={32} width={64} />
+            <span className="sr-only">EMC Strategy Group</span>
           </Link>
-          <Link href="#clients" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Clients
-          </Link>
-          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            About
-          </Link>
-          <Link href="#internship" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Internship
-          </Link>
-          <Link href="#testimonials" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Testimonials
-          </Link>
-        </nav>
+          <nav className="ml-auto flex gap-4 sm:gap-6">
+            <Link href="#services" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              Services
+            </Link>
+            <Link href="#clients" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              Clients
+            </Link>
+            <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              About
+            </Link>
+            <Link href="#internship" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              Internship
+            </Link>
+            <Link href="#testimonials" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+              Testimonials
+            </Link>
+          </nav>
+          </div>
       </header>
     <Landing />
     <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
